@@ -159,6 +159,31 @@ MIT License - voir le fichier [LICENSE](LICENSE)
 
 - **9 février 2026** : Projet initialisé, structure créée ✅
 - **9 février 2026** : GitHub CLI configuré avec succès 🔐
+- **9 février 2026** : Site web éducatif interactif créé 🌐
+
+---
+
+## 🌐 Site Web Interactif
+
+Ce projet inclut maintenant un **site web éducatif** avec :
+
+- 🌍 Navigation multilingue (FR/EN/ES)
+- 📚 Affichage interactif des chapitres
+- 💡 Pop-ups pour les concepts
+- 🎨 Design moderne et responsive
+- 🔍 Recherche de concepts
+
+### 🚀 Lancer le site :
+
+```bash
+cd website
+npm install   # Première fois seulement
+npm run dev
+```
+
+Ouvrez **http://localhost:3000** 🎉
+
+**Guide complet** : Voir [GUIDE-SITE-WEB.md](GUIDE-SITE-WEB.md) | **Démarrage rapide** : [DEMARRAGE-RAPIDE.md](DEMARRAGE-RAPIDE.md)
 
 ---
 
