@@ -113,7 +113,6 @@ export default function ChapterPage() {
                       <button
                         onClick={() => handleConceptClick(conceptSlug)}
                         className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline font-medium cursor-pointer"
-                        {...props}
                       >
                         <Lightbulb className="w-4 h-4" />
                         {children}
