@@ -9,17 +9,19 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
+  const { locale } = await params;
+  
   return (
-    <html lang={params.locale} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100`}>
-        <Navigation locale={params.locale} />
+        <Navigation locale={locale} />
         <main className="min-h-screen">
           {children}
         </main>

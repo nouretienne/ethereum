@@ -3,9 +3,10 @@ import { getConcept } from '@/lib/markdown';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const concept = getConcept(params.slug);
+  const { slug } = await params;
+  const concept = getConcept(slug);
 
   if (!concept) {
     return NextResponse.json({ error: 'Concept not found' }, { status: 404 });
