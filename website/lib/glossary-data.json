@@ -1,0 +1,126 @@
+{
+  "account": {
+    "id": "account",
+    "title": {
+      "fr": "Compte",
+      "en": "Account",
+      "es": "Cuenta"
+    },
+    "description": {
+      "fr": "Un compte Ethereum contient une adresse, un solde et peut stocker du code (smart contract)",
+      "en": "An Ethereum account contains an address, a balance and can store code (smart contract)",
+      "es": "Una cuenta de Ethereum contiene una dirección, un saldo y puede almacenar código (contrato inteligente)"
+    },
+    "diagram": "/diagrams/account.svg",
+    "napkinUrl": "https://napkin.ai/...",
+    "components": [
+      {
+        "id": "address",
+        "position": { "x": 100, "y": 350, "radius": 50 }
+      },
+      {
+        "id": "balance",
+        "position": { "x": 100, "y": 250, "radius": 50 }
+      },
+      {
+        "id": "nonce",
+        "position": { "x": 100, "y": 150, "radius": 50 }
+      },
+      {
+        "id": "storage",
+        "position": { "x": 450, "y": 170, "radius": 50 }
+      },
+      {
+        "id": "code",
+        "position": { "x": 450, "y": 300, "radius": 50 }
+      }
+    ],
+    "relatedTerms": ["address", "balance", "nonce", "storage", "code"],
+    "level": "beginner"
+  },
+  "address": {
+    "id": "address",
+    "title": {
+      "fr": "Adresse",
+      "en": "Address",
+      "es": "Dirección"
+    },
+    "description": {
+      "fr": "Identifiant unique de 42 caractères qui représente un compte Ethereum",
+      "en": "Unique 42-character identifier that represents an Ethereum account",
+      "es": "Identificador único de 42 caracteres que representa una cuenta de Ethereum"
+    },
+    "diagram": "/diagrams/address.svg",
+    "components": [],
+    "relatedTerms": ["account", "private-key", "public-key"],
+    "level": "beginner"
+  },
+  "balance": {
+    "id": "balance",
+    "title": {
+      "fr": "Solde",
+      "en": "Balance",
+      "es": "Saldo"
+    },
+    "description": {
+      "fr": "Quantité d'Ether (ETH) détenue par un compte",
+      "en": "Amount of Ether (ETH) held by an account",
+      "es": "Cantidad de Ether (ETH) poseída por una cuenta"
+    },
+    "diagram": "/diagrams/balance.svg",
+    "components": [],
+    "relatedTerms": ["account", "ether", "wei"],
+    "level": "beginner"
+  },
+  "nonce": {
+    "id": "nonce",
+    "title": {
+      "fr": "Nonce",
+      "en": "Nonce",
+      "es": "Nonce"
+    },
+    "description": {
+      "fr": "Compteur qui empêche les attaques par rejeu (replay attacks)",
+      "en": "Counter that prevents replay attacks",
+      "es": "Contador que previene ataques de repetición"
+    },
+    "diagram": "/diagrams/nonce.svg",
+    "components": [],
+    "relatedTerms": ["account", "transaction", "security"],
+    "level": "intermediate"
+  },
+  "storage": {
+    "id": "storage",
+    "title": {
+      "fr": "Stockage",
+      "en": "Storage",
+      "es": "Almacenamiento"
+    },
+    "description": {
+      "fr": "Espace optionnel pour stocker les données d'un smart contract",
+      "en": "Optional space to store smart contract data",
+      "es": "Espacio opcional para almacenar datos de contratos inteligentes"
+    },
+    "diagram": "/diagrams/storage.svg",
+    "components": [],
+    "relatedTerms": ["account", "smart-contract", "state"],
+    "level": "intermediate"
+  },
+  "code": {
+    "id": "code",
+    "title": {
+      "fr": "Code",
+      "en": "Code",
+      "es": "Código"
+    },
+    "description": {
+      "fr": "Logique optionnelle du smart contract stockée sur la blockchain",
+      "en": "Optional smart contract logic stored on the blockchain",
+      "es": "Lógica opcional del contrato inteligente almacenada en la blockchain"
+    },
+    "diagram": "/diagrams/code.svg",
+    "components": [],
+    "relatedTerms": ["account", "smart-contract", "bytecode"],
+    "level": "intermediate"
+  }
+}

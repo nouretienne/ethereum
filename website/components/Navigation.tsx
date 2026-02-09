@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { type Locale, getTranslation } from '@/lib/i18n';
 import LanguageSwitcher from './LanguageSwitcher';
-import { BookOpen, Lightbulb, Home, Github } from 'lucide-react';
+import { BookOpen, Lightbulb, Home, Github, BookMarked } from 'lucide-react';
 
 interface NavigationProps {
   locale: Locale;
@@ -63,6 +63,18 @@ export default function Navigation({ locale }: NavigationProps) {
             >
               <Lightbulb className="w-5 h-5" />
               <span className="hidden sm:inline">{t.concepts}</span>
+            </Link>
+
+            <Link
+              href={`/${locale}/glossary`}
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
+                isActive(`/${locale}/glossary`)
+                  ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' 
+                  : 'hover:bg-gray-100 dark:hover:bg-gray-800'
+              }`}
+            >
+              <BookMarked className="w-5 h-5" />
+              <span className="hidden sm:inline">{t.glossary}</span>
             </Link>
 
             {/* GitHub Link */}
