@@ -3,8 +3,8 @@ import { type Locale, getTranslation } from '@/lib/i18n';
 import { getChapters, getConcepts } from '@/lib/markdown';
 import { BookOpen, Lightbulb, Github, ArrowRight } from 'lucide-react';
 
-export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
-  const { locale } = await params;
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params as { locale: Locale };
   const t = getTranslation(locale);
   const chapters = getChapters(locale);
   const concepts = getConcepts(locale);

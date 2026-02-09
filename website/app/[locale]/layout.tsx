@@ -14,14 +14,14 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100`}>
-        <Navigation locale={locale} />
+        <Navigation locale={locale as Locale} />
         <main className="min-h-screen">
           {children}
         </main>
