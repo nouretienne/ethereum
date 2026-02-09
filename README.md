@@ -158,6 +158,7 @@ MIT License - voir le fichier [LICENSE](LICENSE)
 ## 📅 Journal d'apprentissage
 
 - **9 février 2026** : Projet initialisé, structure créée ✅
+- **9 février 2026** : GitHub CLI configuré avec succès 🔐
 
 ---
 
