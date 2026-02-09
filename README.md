@@ -155,4 +155,10 @@ MIT License - voir le fichier [LICENSE](LICENSE)
 
 ---
 
+## 📅 Journal d'apprentissage
+
+- **9 février 2026** : Projet initialisé, structure créée ✅
+
+---
+
 *🚀 Apprentissage en cours... Un chapitre à la fois !*
